@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; color: #1a1a1a; }
+    header { display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-bottom: 1px solid #e5e5e5; }
+    .logo { width: 40px; height: 40px; border-radius: 8px; background: #0c6b48; }
+    nav a { margin-left: 20px; text-decoration: none; color: #0c6b48; font-weight: 600; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; }
+    .hero-img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; background: #d9efe6; }
+    .muted { color: #9aa8a2; }               /* deliberately low-contrast on white */
+    form { display: grid; gap: 12px; margin-top: 24px; max-width: 420px; }
+    input { padding: 10px 12px; border: 1px solid #b7c4bd; border-radius: 8px; font: inherit; }
+    button { background: #0c6b48; color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+    .icon-btn { background: #0c6b48; width: 40px; height: 40px; border-radius: 8px; }
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png">
+    <strong>Brew &amp; Bean</strong>
+    <nav>
+      <a href="/menu">Menu</a>
+      <a href="/visit">Visit</a>
+    </nav>
+    <button class="icon-btn" id="menu-toggle"></button>
+  </header>
+
+  <main id="content">
+    <img class="hero-img" src="cafe.jpg">
+    <h1 id="content">Freshly roasted, every morning.</h1>
+    <p>Small-batch coffee roasted in-house and brewed to order.</p>
+    <p class="muted">Open 7am to 6pm, seven days a week.</p>
+
+    <h2>Join our newsletter</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="email" placeholder="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p><a href="/gallery"><img src="gallery-thumb.jpg"></a></p>
+  </main>
+
+  <footer>
+    <p class="muted">&copy; 2026 Brew &amp; Bean. All rights reserved.</p>
+  </footer>
+</body>
+</html>
